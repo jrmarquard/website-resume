@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>John Marquard</title>
+    <!-- to force favicon refresh -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="John Marquard" />
+    <meta property="og:description" content="John Marquard makes stuff." />
+    <meta property="og:image" content="https://johnmarquard.me/og_image.png" />
+    <meta property="og:type" content="website" />
+
+    <style media="screen">
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: #FDFEFF;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            background-image: url(./images/top-left-wave.png), url(./images/bottom-right-wave.png);
+            background-position: left top, right bottom;
+            background-repeat: no-repeat, no-repeat;
+        }
+
+        /* mostly typography */
+        article {
+            max-width: 600px;
+            margin: 150px auto 16px;
+        }
+
+        article h1 {
+            font-size: 54px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            margin: 0;
+        }
+
+        article h2 {
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+            margin: 0 0 8px;
+        }
+
+        a {
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        a:hover {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        section.article-links a {
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        section.article-links a:hover {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        article p {
+            font-size: 16px;
+            margin: 0px;
+            line-height: 2.5em;
+        }
+
+        /* grid spacing */
+        .grid-container>section {
+            padding: 24px 48px;
+        }
+
+
+        .grid-container>section.grid-header,
+        .grid-container>section.grid-links {
+            padding: 48px;
+            box-shadow: 0 0px 14px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .grid-container>section.grid-links {
+            padding: 24px 48px;
+        }
+
+        footer p {
+            color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .article-links {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 600px) {
+            article {
+                margin-top: 0;
+            }
+            
+            .grid-container > section.grid-text {
+                z-index:-99;
+            }
+            .grid-container > section,
+            .grid-container>section.grid-header,
+            .grid-container>section.grid-links {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+
+            .grid-container>section.grid-header,
+            .grid-container>section.grid-links {
+                background-color: rgba(255, 255, 255, 0.95);
+                box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <article class="grid-container">
+        <section class="grid-header article-header">
+            <h2>John Marquard</h2>
+            <h1>Software Developer</h1>
+        </section>
+        <section class="grid-text article-body">
+            <p>Typescript, Python, C</p>
+            <p>I like making cool stuff!</p>
+            <p>
+                <a target="_blank" href="mailto:j.r.marquard@gmail.com">j.r.marquard@gmail.com</a>
+            </p>
+        </section>
+        <section class="grid-links article-links">
+            <a target="_blank" href="https://github.com/jrmarquard">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/john-marquard-8720a253/">LinkedIn</a>
+            <a target="_blank" href="./john_marquard_resume.pdf">Resume</a>
+        </section>
+    </article>
+    <footer class="grid-footer">
+        <p>
+            <i>Last updated in May 2018.</i>
+        </p>
+    </footer>
+</body>
+
+</html>
