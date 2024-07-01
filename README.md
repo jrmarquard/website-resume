@@ -4,11 +4,9 @@ Simple static website to host my resume. Website is hosted at [https://johnmarqu
 
 ## Deploying website
 
-To deploy the website push to master branch.
+To deploy the website push to follow deployment steps below.
 
-Travis CI is used to deploy website. See `.travis.yml` for deployment config.
-
-Firebase is used to host the website. `$PROJECT_ID` and `$FIREBASE_TOKEN` are set in the repo config in Travis CI.
+Firebase is used to host the website.
 
 #### Manual deployment
 
